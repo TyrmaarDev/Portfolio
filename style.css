@@ -353,10 +353,25 @@ position: absolute;
   left: 10%;
   right: 10%;
   height: 45%;
-  background-color:transparent;
-  display: flex;
+  background-color: transparent;
   align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap:0px;
   justify-content: center;
+  justify-items: center;
+}
+.contenu2 .comp{
+  position: relative;
+  height: 80%;
+  width: 40%;
+  margin: 1%;
+  background:rgba(255,255,255,0.1);
+  box-shadow: 5px 5px 0px 1px rgba(255, 255, 255, 0.308);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  
 }
 .comp{
   position: relative;
@@ -784,11 +799,7 @@ img{
     margin: 10px;
   }
 
-  .contenu2 .comp{
-    height: 150px;
-    width: 90px;
-    margin: 10px;
-  }
+  
   .contenu2 .comp .cont .level{
     width: 115px;
     height: 115px;
@@ -802,7 +813,7 @@ img{
     font-size: 15px;
   }
   .comp .cont p{
-    font-size: 15px;
+    font-size: 13px;
   }
   .menu{
     z-index: 9;
