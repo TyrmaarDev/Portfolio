@@ -11,6 +11,7 @@ mailtel.addEventListener('click',function(){
 
 document.addEventListener('DOMContentLoaded', function() {
   window.onscroll = function(ev) {
+    ev.preventDefault();
     document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
   };
 });
