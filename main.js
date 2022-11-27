@@ -9,8 +9,8 @@ mailtel.addEventListener('click',function(){
   teltim.classList.toggle("invisible")
 })
 
-document.addEventListener('DOMContentLoaded', function() {
-  window.onscroll = function(ev) {
+document.addEventListener('DOMContentLoaded', function(ev) {
+  window.onscroll = function() {
     ev.preventDefault();
     document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
   };
