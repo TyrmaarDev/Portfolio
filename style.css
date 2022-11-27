@@ -100,13 +100,13 @@ position: absolute;
 } 
 .fond-blanc{
   position: absolute;
+  top:0;
   width: 30%;
   height: 100%;
   right: 0%;
   background: linear-gradient(-45deg, #f50808, #ec930c, #2f23d5, #12ba09);
-	background-size: 400% 400%;
-	animation: gradient 7s ease infinite;
-	height: 91vh;
+  background-size: 400% 400%;
+  animation: gradient 7s ease infinite;
 }
 @keyframes gradient {
 	0% {
