@@ -203,6 +203,7 @@ position: absolute;
 .slid1{
   background-color: #121212;
   background-image: linear-gradient( #121212,#330867);
+  overflow:hidden;
 }
 .slid2{
   background-image: linear-gradient(#330867,#c907cc);
