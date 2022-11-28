@@ -365,13 +365,13 @@ position: absolute;
 .contenu2 .comp{
   position: relative;
   height: 80%;
-  width: 40%;
+  width: 30%;
   margin: 1%;
   background:rgba(255,255,255,0.1);
   box-shadow: 5px 5px 0px 1px rgba(255, 255, 255, 0.308);
   backdrop-filter: blur(5px);
   border-radius: 15px;
-  
+
 }
 .comp{
   position: relative;
@@ -395,18 +395,15 @@ position: absolute;
   padding: 0 20px;
   position: relative;
   overflow: hidden;
+  text-align: center;
+  text-decoration: none;
 }
 
-.comp .cont .picture{
-  width: 50px;
-  height: 50px;
-  margin: 0 auto;
-  position: relative;
-}
+
 .comp .cont .level{
   position: absolute;
-  width: 230px;
-  height: 230px;
+  width: 200px;
+  height: 200px;
   transform: translate(-50%,-50%);
   left: 50%;
   top: 50%;
@@ -422,11 +419,6 @@ position: absolute;
 .comp .cont .picture img{
   width: 100%;
   height: 100%;
-}
-.comp .cont{
-  position: relative;
-  text-align: center;
-  text-decoration: none;
 }
 
 .comp h1{
@@ -506,10 +498,10 @@ section{
   overflow: hidden;
 }
 .contacts2 li a{
-  position: relative;
+  position: absolute;
   top: 50%;
-  width: 400px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   padding-bottom:5px;
   display: inline-block;
   border-radius: 10px;
@@ -726,11 +718,22 @@ img{
     width: 800px;
   }
   .tim{
+    
     width: 500px;
     font-size: 50px;
   }
   .timleg{
     font-size: 30px;
+  }
+ .contenu1 .comp{
+    width: 200px;
+  }
+
+  .contenu2 .comp{
+    width: 200px;
+  }
+  .contacts{
+    padding-top: 80px;
   }
 }
 @media  screen and (max-width:900px) {
@@ -743,37 +746,7 @@ img{
     width: 270px;
     height: 270px;
   }
-  .tim{
-    font-size: 25px;
-    left: 260px;
-    top: 100px;
-    animation-duration: 1.5s;
-   animation-name: slideTimreduit;
-}
-  @keyframes slideTimreduit{
-  from{
-    left: 2px;
-  }
-  to{
-    left: 260px;
-  }
-}
-  .timleg{
-    font-size: 23px;
-    animation: none;
-    top: 130px;
-    left: 150px;
-    animation-duration: 1.5s;
-    animation-name: slideTimLegreduit;
- }
-   @keyframes slideTimLegreduit{
-   from{
-     left: 2px;
-   }
-   to{
-     left: 150px;
-   }
- }
+ 
   .paragraphe{
     width: 300px;
     font-size: 16px;
@@ -792,28 +765,41 @@ img{
   #ligne1{
     top:49%
   }
-
+  .tim{
+    font-size: 25px;
+  }
+  .timleg{
+    font-size: 15px;
+  }
+  .contenu2{
+    padding-top: 50px;
+  }
   .contenu1 .comp{
-    height: 200px;
-    width: 120px;
+    height: 110px;
+    width: 110px;
     margin: 10px;
   }
-
+  .contenu2 .comp{
+    width: 110px;
+    height: 100px;
+    margin: 10px;
+  }
   
   .contenu2 .comp .cont .level{
-    width: 115px;
-    height: 115px;
+    width: 110px;
+    height: 110px;
   }
 
-  .comp .cont .level{
-    width: 150px;
-    height: 150px;
+  .contenu1 .comp .cont .level{
+    width: 135px;
+    height: 135px;
   }
   .comp  h1{
     font-size: 15px;
   }
   .comp .cont p{
-    font-size: 13px;
+    padding-top: 10px;
+    font-size: 12px;
   }
   .menu{
     z-index: 9;
