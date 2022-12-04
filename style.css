@@ -270,8 +270,8 @@ img{
 .skills__container{
     row-gap: 2rem;
 }
-#blob2{
-    width: 400px;
+#blob{
+    width: 600px;
 }
 .skills__subtitle{
     color: var(--first-color);
@@ -460,6 +460,7 @@ img{
     }
     .about__img img{
         width: 165px;
+        height: 165px;
     }
     .skills__container{
         grid-template-columns: repeat(2, 1fr);
