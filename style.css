@@ -78,6 +78,7 @@ a{
 }
 
 img{
+    z-index: 0;
     max-width: 100%;
     height: auto;
     display: block;
@@ -89,6 +90,7 @@ img{
 
 .section-title{
     position: relative;
+    z-index: 1;
     font-size: var(--h2-font-size);
     color: var(--dark-color);
     margin: var(--mb-4) 0;
@@ -137,7 +139,7 @@ img{
 }
 
 @media screen and (max-width:768px) {
-    .nav-menu{
+    .nav__menu{
         position: fixed;
         top: var(--header-height);
         right: -100%;
@@ -149,7 +151,7 @@ img{
         backdrop-filter: blur(10px);
     }
 }
-.nav-item{
+.nav__item{
     margin-bottom: var(--mb-4);    
 }
 .nav__link{
