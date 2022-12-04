@@ -140,10 +140,12 @@ img{
 
 @media screen and (max-width:768px) {
     .nav__menu{
+        
         position: fixed;
+        z-index: 10;
         top: var(--header-height);
         right: -100%;
-        width: 80%;
+        width: 35%;
         height: 100%;
         padding: 2rem;
         background-color: rgba(255,255,255, .3);
