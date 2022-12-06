@@ -151,6 +151,7 @@ img{
     cursor: pointer;
 }
 
+
 /* SHOW MENU */
 .show{
     right: 0;
@@ -276,16 +277,23 @@ img{
     margin-right: var(--mb-2);
     margin-bottom: var(--mb-3);
     padding: 0rem .5rem;
-    background-color: transparent;
+    background: linear-gradient(45deg, #f50808, #ec930c,#fa61fa, #0c69ec, #1100ff);
+     background-size: 400% 400%;
     border-radius: .25rem;
+    animation: gradient 5s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
-.skills__name:hover{
-    background-color: #FAD961;
-    background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);
-
-    color: var(--white-color);
-}
 .skills__img img{
     border-radius: .5rem;
     width: 50%;
